@@ -1,0 +1,357 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+    --primary-color: 30, 144, 255;
+    /* Blue */
+    --secondary-color: 64, 224, 208;
+    /* Turquoise */
+    --dark-color: 10, 10, 15;
+    /* Black */
+    --ground-color: 255, 255, 255;
+    /* White */
+    --onground-color: 245, 247, 250;
+    /* Light gray-white */
+    --border-color: 200, 220, 240;
+    --text-color: 30, 30, 40;
+    --heading-color: 10, 10, 15;
+    --accent-blue: 0, 123, 255;
+    --accent-turquoise: 72, 209, 204;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    color: rgb(var(--text-color));
+    background-color: rgb(var(--ground-color));
+    overflow-x: hidden;
+    line-height: 1.6;
+    animation: pageLoad 0.5s ease-out;
+}
+
+@keyframes pageLoad {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+* {
+    box-sizing: border-box;
+    transition: .25s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: rgb(var(--heading-color));
+}
+
+/* Consistent Typography Scale */
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.slideBtn:focus-visible {
+    outline: 2px solid rgb(var(--primary-color));
+    outline-offset: 2px;
+}
+
+
+
+/* ============ SLIDE BUTTON ================== */
+
+
+.slideBtn {
+    background-color: transparent;
+    outline: none;
+    border: solid 1px rgba(var(--border-color));
+    border-radius: 10px;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    height: fit-content;
+}
+
+.slideBtn::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(135deg, rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(var(--primary-color), 0.3);
+}
+
+.slideLeft {
+    border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slideLeft span {
+    color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.slideLeft .slideBtnSp1 {
+    left: 0;
+}
+
+.slideLeft .slideBtnSp2 {
+    left: -100%;
+}
+
+.slideRight {
+    flex: 1;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.slideRightInner {
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+}
+
+.slideRight p {
+    opacity: 0;
+    margin: 0;
+}
+
+.slideRight label {
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 100%;
+    left: 0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.slideBtnLb1 {
+    top: 0;
+}
+
+.slideBtnLb2 {
+    top: 100%;
+}
+
+.slideBtn:hover::before {
+    width: 96%;
+    box-shadow: 0 6px 20px rgba(var(--primary-color), 0.5);
+}
+
+.slideBtn:hover .slideBtnSp1 {
+    left: 100%;
+}
+
+.slideBtn:hover .slideBtnSp2 {
+    left: 0;
+}
+
+.slideBtn:hover .slideBtnLb1 {
+    top: -100%;
+    color: white !important;
+}
+
+.slideBtn:hover .slideBtnLb2 {
+    top: 0;
+    color: white !important;
+}
+
+.slideBtn:focus-visible {
+    outline: 2px solid rgb(var(--primary-color));
+    outline-offset: 2px;
+}
+
+
+/* ============ SLIDE BUTTON ================== */
+
+
+.hoverBtn {
+    background-color: transparent;
+    outline: none;
+    border: solid 1px rgba(var(--border-color));
+    border-radius: 10px;
+    padding: 3px;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    height: fit-content;
+    transition: 0.3s;
+}
+
+.hoverBtnRight {
+    flex: 1;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.hoverBtnRightInner {
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+}
+
+.hoverBtnRight p {
+    opacity: 0;
+    margin: 0;
+}
+
+.hoverBtnRight label {
+    font-size: 0.8rem;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 100%;
+    left: 0;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.hoverBtnLb1 {
+    top: 0;
+}
+
+.hoverBtnLb2 {
+    top: 100%;
+}
+
+.hoverBtn:hover {
+    background: linear-gradient(135deg, rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    box-shadow: 0 4px 15px rgba(var(--primary-color), 0.4);
+}
+
+.hoverBtn:hover .hoverBtnLb1 {
+    top: -100%;
+    color: white !important;
+}
+
+.hoverBtn:hover .hoverBtnLb2 {
+    top: 0;
+    color: white !important;
+}
+
+
+
+.hoverBtn:focus-visible {
+    outline: 2px solid rgb(var(--primary-color));
+    outline-offset: 2px;
+}
+
+.slideBtn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+.hoverBtn:active {
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
+}
+
+/* Global Container */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section Dividers */
+section:not(:last-child)::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(var(--primary-color), 0.1) 50%, transparent);
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+/* Card Consistency */
+.card,
+.service-card,
+.pricing-card,
+.feature-card,
+.about-feature-item {
+    border-radius: 12px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07) !important;
+}
+
+/* Icon Size Consistency */
+.service-icon,
+.feature-icon,
+.icon {
+    width: 50px !important;
+    height: 50px !important;
+}
+
+/* Typography Override for exact sizes */
+/* Typography Override for exact sizes */
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+}

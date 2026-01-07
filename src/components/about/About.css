@@ -1,0 +1,214 @@
+﻿.p-about-header {
+    min-height: 400px;
+    background: linear-gradient(135deg, rgba(var(--dark-color), 0.9), rgba(var(--primary-color), 0.3), rgba(var(--dark-color), 0.9)),
+        url('./../../assets/images/about-header.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(var(--primary-color), 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(var(--secondary-color), 0.2) 0%, transparent 50%);
+    animation: bannerGlow 8s ease-in-out infinite;
+}
+
+@keyframes bannerGlow {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.p-about-header>div {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+}
+
+.p-about-header h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, white, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.p-about-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .p-about-header {
+        min-height: 300px;
+    }
+
+    .p-about-header h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.p-services-header {
+    min-height: 400px;
+    background: linear-gradient(135deg, rgba(var(--dark-color), 0.9), rgba(var(--primary-color), 0.3), rgba(var(--dark-color), 0.9)),
+        url('./../../assets/images/services-header.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-services-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(var(--primary-color), 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(var(--secondary-color), 0.2) 0%, transparent 50%);
+    animation: bannerGlow 8s ease-in-out infinite;
+}
+
+.p-services-header>div {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+}
+
+.p-services-header h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, white, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.p-services-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    border-radius: 2px;
+}
+
+.p-portfolio-header {
+    min-height: 400px;
+    background: linear-gradient(135deg, rgba(var(--dark-color), 0.9), rgba(var(--primary-color), 0.3), rgba(var(--dark-color), 0.9)),
+        url('./../../assets/images/portfolio-header.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.p-portfolio-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 20% 50%, rgba(var(--primary-color), 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(var(--secondary-color), 0.2) 0%, transparent 50%);
+    animation: bannerGlow 8s ease-in-out infinite;
+}
+
+.p-portfolio-header>div {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 40px;
+}
+
+.p-portfolio-header h1 {
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, white, rgba(255, 255, 255, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+}
+
+.p-portfolio-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, rgb(var(--primary-color)), rgb(var(--secondary-color)));
+    border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .p-services-header,
+    .p-portfolio-header {
+        min-height: 300px;
+    }
+
+    .p-services-header h1,
+    .p-portfolio-header h1 {
+        font-size: 2.5rem;
+    }
+}
