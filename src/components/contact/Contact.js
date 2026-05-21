@@ -47,7 +47,7 @@ const ContactPage = () => {
             <p>info@trinovussolutions.com</p>
 
             <h3>Location</h3>
-            <p>Tech Hub, Innovation District</p>
+            <p>Shah Faisal, Number 3</p>
           </div>
         </div>
 
