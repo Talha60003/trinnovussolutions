@@ -100,7 +100,7 @@ const Footer = () => {
             <div className='ftrPart ftrContact'>
               <h5>Contact</h5>
               <p>
-                <span><FaPhoneAlt /></span> +923142216003
+                <span><FaPhoneAlt /></span> +92 315 8431962
               </p>
               <p>
                 <span><MdEmail /></span> info@trinovussolutions.com
