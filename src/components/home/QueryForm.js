@@ -17,7 +17,7 @@ const QueryForm = () => {
                             <div className='query-contact'>
                                 <div className='query-contact-divider'></div>
                                 <p><span><MdEmail /></span> info@trinovussolutions.com</p>
-                                <p><span><FaPhoneAlt /></span> +92 314 2216003</p>
+                                <p><span><FaPhoneAlt /></span> +92 315 8431962</p>
                             </div>
                         </div>
                     </div>
